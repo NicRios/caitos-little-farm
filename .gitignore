@@ -6,6 +6,7 @@
 
 # Generated site and deployment output
 /.next/
+/.vite/
 /.vinext/
 /dist/
 /out/
