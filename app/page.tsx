@@ -1,0 +1,195 @@
+import Image from 'next/image';
+
+const contactDetails = [
+  {
+    number: '01',
+    label: 'Say hello',
+    detail: 'hello@example.com',
+  },
+  {
+    number: '02',
+    label: 'Plan a visit',
+    detail: 'By appointment only',
+  },
+  {
+    number: '03',
+    label: 'Find the farm',
+    detail: 'Address coming soon',
+  },
+];
+
+export default function Home() {
+  return (
+    <main>
+      <a className="skip-link" href="#main-content">
+        Skip to content
+      </a>
+
+      <header className="site-header">
+        <nav className="nav-group nav-left" aria-label="Primary navigation">
+          <a href="#story">Our story</a>
+          <a href="#visit">The farm</a>
+        </nav>
+
+        <a
+          className="wordmark"
+          href="#top"
+          aria-label="Caito’s Little Farm, home"
+        >
+          Caito’s Little Farm
+        </a>
+
+        <nav className="nav-group nav-right" aria-label="Secondary navigation">
+          <a href="#visit">Visit</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <section className="hero" id="top" aria-labelledby="hero-title">
+        <Image
+          className="hero-image"
+          src="/placeholders/hero-farm.svg"
+          alt="Placeholder for a wide photograph of Caito’s Little Farm"
+          width={1600}
+          height={980}
+          priority
+          unoptimized
+        />
+        <div className="hero-wash" aria-hidden="true" />
+        <div className="hero-copy">
+          <p className="eyebrow hero-eyebrow">Welcome to our little corner</p>
+          <h1 id="hero-title">
+            A little place to <em>grow, gather &amp; remember.</em>
+          </h1>
+        </div>
+        <a className="scroll-cue" href="#main-content">
+          <span>Meet the farm</span>
+          <span aria-hidden="true">↓</span>
+        </a>
+      </section>
+
+      <section
+        className="story-section"
+        id="main-content"
+        aria-labelledby="story-title"
+      >
+        <div className="farm-seal" aria-hidden="true">
+          <span>CLF</span>
+          <small>grown with care</small>
+        </div>
+
+        <div className="photo-stack" aria-label="Farm photo placeholders">
+          <figure className="photo-card photo-card-back">
+            <Image
+              src="/placeholders/farm-detail.svg"
+              alt="Placeholder for a close-up farm photograph"
+              width={720}
+              height={900}
+              unoptimized
+            />
+          </figure>
+          <figure className="photo-card photo-card-front">
+            <Image
+              src="/placeholders/farm-portrait.svg"
+              alt="Placeholder for a portrait photograph from the farm"
+              width={720}
+              height={900}
+              unoptimized
+            />
+          </figure>
+          <span className="hand-note" aria-hidden="true">
+            slow days / good soil
+          </span>
+        </div>
+
+        <div className="story-copy" id="story">
+          <p className="eyebrow">Rooted in simple things</p>
+          <h2 id="story-title">Small harvests. Big-hearted days.</h2>
+          <p>
+            Caito’s Little Farm is a place for muddy boots, open skies, and food
+            grown close to home. We’re making room for slower mornings and the
+            kind of moments that stay with you.
+          </p>
+          <p>
+            This space will soon hold seasonal notes, visiting details, and
+            stories from the field. For now, consider it an open gate—and a warm
+            invitation to say hello.
+          </p>
+          <a className="text-link" href="#contact">
+            Get in touch <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section
+        className="field-break"
+        id="visit"
+        aria-label="Farm visit preview"
+      >
+        <Image
+          src="/placeholders/farm-wide.svg"
+          alt="Placeholder for a panoramic photograph of the farm"
+          width={1600}
+          height={760}
+          unoptimized
+        />
+        <div className="field-caption">
+          <span>Seasonal visits</span>
+          <strong>Come as you are.</strong>
+        </div>
+      </section>
+
+      <section
+        className="contact-section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div className="contact-intro">
+          <p className="eyebrow">Let’s keep in touch</p>
+          <h2 id="contact-title">Come say hello.</h2>
+          <p>
+            Questions, visit ideas, or simply curious about what’s growing? We’d
+            love to hear from you.
+          </p>
+          <a className="primary-button" href="mailto:hello@example.com">
+            Email the farm
+          </a>
+          <small className="placeholder-note">
+            Replace the sample email and address before sharing publicly.
+          </small>
+        </div>
+
+        <figure className="contact-photo">
+          <Image
+            src="/placeholders/contact-farm.svg"
+            alt="Placeholder for a welcoming photograph of the farm"
+            width={720}
+            height={960}
+            unoptimized
+          />
+          <figcaption>There’s always something growing.</figcaption>
+        </figure>
+
+        <div className="contact-list" aria-label="Contact details">
+          {contactDetails.map((item) => (
+            <div className="contact-item" key={item.number}>
+              <span className="contact-number">{item.number}</span>
+              <div>
+                <h3>{item.label}</h3>
+                <p>{item.detail}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <footer>
+        <a className="footer-mark" href="#top">
+          Caito’s Little Farm
+        </a>
+        <p>Growing slowly. Welcoming warmly.</p>
+        <p>© {new Date().getFullYear()} Caito’s Little Farm</p>
+      </footer>
+    </main>
+  );
+}

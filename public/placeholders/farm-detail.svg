@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">Farm detail photo placeholder</title>
+  <desc id="desc">An abstract ochre and green placeholder for a close-up farm photograph.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="1" y2="0">
+      <stop offset="0" stop-color="#b77447"/>
+      <stop offset=".48" stop-color="#d8ad70"/>
+      <stop offset="1" stop-color="#566f58"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="900" fill="url(#bg)"/>
+  <circle cx="150" cy="160" r="230" fill="#f3d6a2" fill-opacity=".2"/>
+  <circle cx="655" cy="770" r="300" fill="#263f35" fill-opacity=".22"/>
+  <g fill="#fffaf0" text-anchor="middle" font-family="Arial, sans-serif">
+    <text x="360" y="425" font-size="20" font-weight="700" letter-spacing="4">DETAIL PHOTO</text>
+    <text x="360" y="460" font-size="16" opacity=".86">720 × 900 placeholder</text>
+  </g>
+</svg>
