@@ -209,39 +209,10 @@ img {
   background: var(--paper);
 }
 
-.farm-seal {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  display: grid;
-  width: 9.5rem;
-  height: 9.5rem;
-  place-content: center;
-  border: 1px solid var(--rule);
-  border-radius: 50%;
-  color: var(--plum);
-  text-align: center;
-  transform: translate(-42%, -50%) rotate(-12deg);
-}
-
-.farm-seal span {
-  font-family: var(--display);
-  font-size: 2.2rem;
-  font-style: italic;
-}
-
-.farm-seal small {
-  display: block;
-  font-size: 0.55rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
 .photo-stack {
   position: relative;
-  width: min(100%, 32rem);
-  min-height: 33rem;
+  width: min(100%, 36rem);
+  min-height: 38rem;
   margin-inline: auto;
 }
 
@@ -259,31 +230,20 @@ img {
 }
 
 .photo-card-back {
-  left: 36%;
+  left: 38%;
   top: 0;
-  width: 47%;
-  height: 24rem;
+  width: 58%;
+  aspect-ratio: 4 / 5;
   transform: rotate(2deg);
 }
 
 .photo-card-front {
-  left: 3%;
-  top: 27%;
+  left: 0;
+  top: 8.5rem;
   z-index: 2;
-  width: 50%;
-  height: 25rem;
+  width: 62%;
+  aspect-ratio: 4 / 5;
   transform: rotate(-2.5deg);
-}
-
-.hand-note {
-  position: absolute;
-  bottom: 1.5rem;
-  right: 0;
-  color: var(--plum);
-  font-family: var(--display);
-  font-size: 1.15rem;
-  font-style: italic;
-  transform: rotate(-4deg);
 }
 
 .story-copy {
@@ -301,8 +261,8 @@ img {
   color: var(--ink-soft);
 }
 
-.story-copy > p:first-of-type:not(.eyebrow) {
-  margin-top: 2rem;
+.story-copy h2 + p {
+  margin-top: clamp(2.5rem, 4vw, 3.5rem);
 }
 
 .text-link {
@@ -555,18 +515,7 @@ a:focus-visible {
   }
 
   .photo-stack {
-    min-height: 27rem;
-  }
-
-  .photo-card-back,
-  .photo-card-front {
-    height: 20rem;
-  }
-
-  .farm-seal {
-    top: 26rem;
-    width: 7rem;
-    height: 7rem;
+    min-height: min(35rem, 150vw);
   }
 
   .field-break,

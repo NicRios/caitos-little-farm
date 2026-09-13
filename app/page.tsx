@@ -1,5 +1,8 @@
 import Image from 'next/image';
 
+const assetPath = (path: string) =>
+  `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${path}`;
+
 const contactDetails = [
   {
     number: '01',
@@ -48,7 +51,7 @@ export default function Home() {
       <section className="hero" id="top" aria-labelledby="hero-title">
         <Image
           className="hero-image"
-          src="/placeholders/hero-farm.svg"
+          src={assetPath('/placeholders/hero-farm.svg')}
           alt="Placeholder for a wide photograph of Caito’s Little Farm"
           width={1600}
           height={980}
@@ -73,15 +76,10 @@ export default function Home() {
         id="main-content"
         aria-labelledby="story-title"
       >
-        <div className="farm-seal" aria-hidden="true">
-          <span>CLF</span>
-          <small>grown with care</small>
-        </div>
-
         <div className="photo-stack" aria-label="Farm photo placeholders">
           <figure className="photo-card photo-card-back">
             <Image
-              src="/placeholders/farm-detail.svg"
+              src={assetPath('/placeholders/farm-detail.svg')}
               alt="Placeholder for a close-up farm photograph"
               width={720}
               height={900}
@@ -90,16 +88,13 @@ export default function Home() {
           </figure>
           <figure className="photo-card photo-card-front">
             <Image
-              src="/placeholders/farm-portrait.svg"
+              src={assetPath('/placeholders/farm-portrait.svg')}
               alt="Placeholder for a portrait photograph from the farm"
               width={720}
               height={900}
               unoptimized
             />
           </figure>
-          <span className="hand-note" aria-hidden="true">
-            slow days / good soil
-          </span>
         </div>
 
         <div className="story-copy" id="story">
@@ -127,7 +122,7 @@ export default function Home() {
         aria-label="Farm visit preview"
       >
         <Image
-          src="/placeholders/farm-wide.svg"
+          src={assetPath('/placeholders/farm-wide.svg')}
           alt="Placeholder for a panoramic photograph of the farm"
           width={1600}
           height={760}
@@ -161,7 +156,7 @@ export default function Home() {
 
         <figure className="contact-photo">
           <Image
-            src="/placeholders/contact-farm.svg"
+            src={assetPath('/placeholders/contact-farm.svg')}
             alt="Placeholder for a welcoming photograph of the farm"
             width={720}
             height={960}
