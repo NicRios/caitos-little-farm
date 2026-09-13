@@ -1,6 +1,6 @@
 # Caito’s Little Farm
 
-A responsive, single-page farm website inspired by an airy editorial travel layout. The current photography is temporary SVG artwork; this guide explains exactly how to replace it with final farm photos without changing the layout.
+A responsive, single-page farm website inspired by an airy editorial travel layout. The hero uses a finished photograph of the Caito home; four remaining sections use temporary SVG artwork. This guide explains exactly how to replace any image without changing the layout.
 
 ## Live site and publishing
 
@@ -15,7 +15,7 @@ Every change merged into `main` is built and deployed to GitHub Pages automatica
 
 - [`app/page.tsx`](app/page.tsx) contains all page text, image filenames, image dimensions, and alt text.
 - [`app/globals.css`](app/globals.css) controls the layout, colors, image crops, spacing, and responsive behavior.
-- [`public/placeholders/`](public/placeholders/) contains the five temporary image files that need to be replaced.
+- [`public/placeholders/`](public/placeholders/) contains the finished hero photo and the four temporary image files that still need to be replaced.
 - [`app/icon.svg`](app/icon.svg) is the browser-tab icon.
 - [`README.md`](README.md) is this editing and publishing guide.
 
@@ -41,7 +41,7 @@ Use original, high-resolution photographs. Crop and export each photo to the exa
 
 | Page placement | Current placeholder | Image code | Export size | Ratio | Suggested maximum file size |
 | --- | --- | --- | ---: | ---: | ---: |
-| Full-screen hero | [`hero-farm.svg`](public/placeholders/hero-farm.svg) | [`app/page.tsx` lines 51–60](app/page.tsx#L51-L60) | 1600 × 980 px | 80:49 landscape | 700 KB |
+| Full-screen hero | [`hero-caito-home.jpg`](public/placeholders/hero-caito-home.jpg) | [`app/page.tsx` lines 51–60](app/page.tsx#L51-L60) | 1600 × 980 px | 80:49 landscape | 700 KB |
 | Back image in overlapping pair | [`farm-detail.svg`](public/placeholders/farm-detail.svg) | [`app/page.tsx` lines 80–88](app/page.tsx#L80-L88) | 720 × 900 px | 4:5 portrait | 400 KB |
 | Front image in overlapping pair | [`farm-portrait.svg`](public/placeholders/farm-portrait.svg) | [`app/page.tsx` lines 89–97](app/page.tsx#L89-L97) | 720 × 900 px | 4:5 portrait | 400 KB |
 | Full-width farm panorama | [`farm-wide.svg`](public/placeholders/farm-wide.svg) | [`app/page.tsx` lines 119–135](app/page.tsx#L119-L135) | 1600 × 760 px | 40:19 landscape | 700 KB |
@@ -61,7 +61,7 @@ Recommended export settings:
 
 ### 1. Hero image
 
-- File to replace: [`public/placeholders/hero-farm.svg`](public/placeholders/hero-farm.svg)
+- Current file: [`public/placeholders/hero-caito-home.jpg`](public/placeholders/hero-caito-home.jpg)
 - Code to update: [`app/page.tsx` lines 51–60](app/page.tsx#L51-L60)
 - Required crop: **1600 × 980 px, landscape**
 
@@ -147,10 +147,10 @@ Example alt text: `An open wooden gate leading toward the garden and farmhouse`.
 
 ## How to install a final photo
 
-Repeat these steps for each of the five images.
+Repeat these steps for any image you want to replace. The hero is already a finished photograph; the other four image positions still use SVG placeholders.
 
 1. Crop the original photograph to the required aspect ratio and export it at the listed dimensions.
-2. Give it a clear matching name, such as `hero-farm.webp`, `farm-detail.webp`, `farm-portrait.webp`, `farm-wide.webp`, or `contact-farm.webp`.
+2. Give it a clear matching name, such as `hero-caito-home.jpg`, `farm-detail.webp`, `farm-portrait.webp`, `farm-wide.webp`, or `contact-farm.webp`.
 3. Add the exported file to [`public/placeholders/`](public/placeholders/).
 4. Open [`app/page.tsx`](app/page.tsx) and find the matching `<Image>` block using the links in the table above.
 5. Change only the filename and extension inside `assetPath(...)`.
@@ -162,15 +162,15 @@ Repeat these steps for each of the five images.
 For example, the hero image changes from:
 
 ```tsx
-src={assetPath('/placeholders/hero-farm.svg')}
-alt="Placeholder for a wide photograph of Caito’s Little Farm"
+src={assetPath('/placeholders/hero-caito-home.jpg')}
+alt="The red Caito home framed by trees in warm evening light"
 ```
 
 to:
 
 ```tsx
-src={assetPath('/placeholders/hero-farm.webp')}
-alt="Late-afternoon light over the fields at Caito’s Little Farm"
+src={assetPath('/placeholders/hero-summer.webp')}
+alt="The Caito home and front garden on a bright summer morning"
 ```
 
 Do not remove `assetPath(...)`. It makes the same image URL work both on localhost and under the `/caitos-little-farm/` GitHub Pages address.

@@ -51,8 +51,8 @@ export default function Home() {
       <section className="hero" id="top" aria-labelledby="hero-title">
         <Image
           className="hero-image"
-          src={assetPath('/placeholders/hero-farm.svg')}
-          alt="Placeholder for a wide photograph of Caito’s Little Farm"
+          src={assetPath('/placeholders/hero-caito-home.jpg')}
+          alt="The red Caito home framed by trees in warm evening light"
           width={1600}
           height={980}
           priority
@@ -60,9 +60,9 @@ export default function Home() {
         />
         <div className="hero-wash" aria-hidden="true" />
         <div className="hero-copy">
-          <p className="eyebrow hero-eyebrow">Welcome to our little corner</p>
+          <p className="eyebrow hero-eyebrow">Welcome to our little Farm</p>
           <h1 id="hero-title">
-            A little place to <em>grow, gather &amp; remember.</em>
+            The Caito Home
           </h1>
         </div>
         <a className="scroll-cue" href="#main-content">
