@@ -14,6 +14,7 @@
   --rule: oklch(0.74 0.029 61 / 55%);
   --white-soft: oklch(0.99 0.006 75);
   --display: 'Iowan Old Style', 'Baskerville', 'Times New Roman', serif;
+  --hero-display: 'Bodoni 72', 'Didot', 'Bodoni MT', 'Times New Roman', serif;
   --body: 'Avenir Next', 'Segoe UI', 'Helvetica Neue', sans-serif;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -176,7 +177,10 @@ img {
 }
 
 .hero-eyebrow {
+  margin-bottom: 1.35rem;
   color: var(--white-soft);
+  font-size: clamp(0.88rem, 1.25vw, 1.05rem);
+  letter-spacing: 0.22em;
 }
 
 .hero h1,
@@ -190,7 +194,12 @@ img {
 }
 
 .hero h1 {
-  font-size: clamp(3.25rem, 8vw, 7.8rem);
+  max-width: 12ch;
+  font-family: var(--hero-display);
+  font-size: clamp(4.5rem, 10vw, 9.5rem);
+  letter-spacing: -0.055em;
+  line-height: 0.9;
+  text-wrap: balance;
 }
 
 .hero h1 em {
