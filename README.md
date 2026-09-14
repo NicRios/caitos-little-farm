@@ -73,6 +73,7 @@ Composition requirements:
 - Keep the main subject away from the extreme left and right edges; mobile screens crop both sides.
 - If the home is the subject, show its full front elevation with breathing room on both sides and avoid wide-angle distortion.
 - The current hero crop is anchored to the bottom of the photograph and enlarged with `object-position: center bottom`, `transform: scale(1.18) translate(1%, 0)`, and `transform-origin: center bottom` in `.hero-image`. This keeps the sidewalk in view while cropping substantially more sky above the roofline.
+- The title and subtitle are fixed to the exact horizontal and vertical center of the hero by the flex alignment rules in `.hero-copy`.
 - Favor a darker or mid-tone center so the white headline remains readable.
 - Avoid a close face, animal, sign, or other essential detail in the center behind the text.
 - Review the image on both desktop and mobile before approving the crop.
