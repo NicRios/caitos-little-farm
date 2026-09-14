@@ -88,11 +88,11 @@ export default function Home() {
         id="main-content"
         aria-labelledby="story-title"
       >
-        <div className="photo-stack" aria-label="Farm photo placeholders">
+        <div className="photo-stack" aria-label="Photos from the Caito home">
           <figure className="photo-card photo-card-back">
             <Image
-              src={assetPath('/placeholders/farm-detail.svg')}
-              alt="Placeholder for a close-up farm photograph"
+              src={assetPath('/placeholders/home-vanity-detail.jpg')}
+              alt="Double vanity with a lighted mirror and herringbone tile in the Caito home"
               width={720}
               height={1080}
               unoptimized
@@ -100,8 +100,8 @@ export default function Home() {
           </figure>
           <figure className="photo-card photo-card-front">
             <Image
-              src={assetPath('/placeholders/farm-portrait.svg')}
-              alt="Placeholder for a portrait photograph from the farm"
+              src={assetPath('/placeholders/guest-room-portrait.jpg')}
+              alt="A neatly made bedroom with an olive green accent wall in the Caito home"
               width={720}
               height={1080}
               unoptimized
