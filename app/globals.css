@@ -128,6 +128,7 @@ img {
 
 .hero-image {
   z-index: -3;
+  object-position: center 68%;
   transform: scale(1.06) translate(1%, -2.25%);
   transform-origin: center;
 }
