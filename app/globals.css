@@ -129,8 +129,8 @@ img {
 .hero-image {
   z-index: -3;
   object-position: center bottom;
-  transform: scale(1.06) translate(1%, -2.25%);
-  transform-origin: center;
+  transform: scale(1.18) translate(1%, 0);
+  transform-origin: center bottom;
 }
 
 .hero-wash {
