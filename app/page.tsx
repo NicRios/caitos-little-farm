@@ -51,14 +51,23 @@ export default function Home() {
       <section className="hero" id="top" aria-labelledby="hero-title">
         <Image
           className="hero-image"
-          src={assetPath('/placeholders/hero-caito-home.jpg')}
-          alt="The red Caito home framed by trees in warm evening light"
+          src={assetPath('/placeholders/hero-caito-home-straight.jpg')}
+          alt="Straight-on view of the red Caito home framed by trees in warm evening light"
           width={1600}
           height={980}
           priority
           unoptimized
         />
-        <div className="hero-wash" aria-hidden="true" />
+        <div className="hero-wash" aria-hidden="true">
+          <Image
+            className="hero-wave-divider"
+            src={assetPath('/placeholders/hero-wave-divider.svg')}
+            alt=""
+            width={1600}
+            height={440}
+            unoptimized
+          />
+        </div>
         <div className="hero-copy">
           <p className="eyebrow hero-eyebrow">Welcome to our little Farm</p>
           <h1 id="hero-title">
