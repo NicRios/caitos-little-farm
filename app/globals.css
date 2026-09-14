@@ -89,8 +89,7 @@ img {
 }
 
 .nav-group a,
-.text-link,
-.scroll-cue {
+.text-link {
   transition:
     color 180ms var(--ease-out),
     opacity 180ms var(--ease-out);
@@ -206,24 +205,6 @@ img {
 .hero h1 em {
   display: block;
   font-weight: 400;
-}
-
-.scroll-cue {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  display: grid;
-  width: 2.75rem;
-  height: 2.75rem;
-  place-items: center;
-  color: var(--white-soft);
-  font-size: 1.35rem;
-  line-height: 1;
-  transform: translateX(-50%);
-}
-
-.scroll-cue:hover {
-  opacity: 0.72;
 }
 
 .story-section {
