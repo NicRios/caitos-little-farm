@@ -137,6 +137,17 @@ img {
     linear-gradient(0deg, oklch(0.17 0.025 36 / 44%), transparent 52%);
 }
 
+.hero-wave-divider {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: clamp(11rem, 24vw, 20rem);
+  object-fit: fill;
+  opacity: 0.92;
+}
+
 .hero-copy {
   max-width: 64rem;
   padding: 6rem 1.5rem;
