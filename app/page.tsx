@@ -134,8 +134,8 @@ export default function Home() {
         aria-label="Farm visit preview"
       >
         <Image
-          src={assetPath('/placeholders/backyard-farm-panorama.jpg')}
-          alt="Wide view of the Caito backyard with a gazebo, garden house, swings, and a dog at sunset"
+          src={assetPath('/placeholders/backyard-farm-panorama-chickens.jpg')}
+          alt="Five chickens roaming the Caito backyard beside a flowering bush, gazebo, and garden house at sunset"
           width={1600}
           height={760}
           unoptimized
