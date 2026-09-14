@@ -228,9 +228,9 @@ img {
 .story-section {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(18rem, 0.9fr) minmax(22rem, 1fr);
-  gap: clamp(4rem, 8vw, 9rem);
-  align-items: center;
+  grid-template-columns: minmax(20rem, 1fr) minmax(22rem, 1fr);
+  gap: clamp(3rem, 6vw, 6rem);
+  align-items: start;
   min-height: 52rem;
   padding: clamp(6rem, 10vw, 10rem) clamp(1.5rem, 9vw, 10rem);
   background: var(--paper);
@@ -238,9 +238,9 @@ img {
 
 .photo-stack {
   position: relative;
-  width: min(100%, 36rem);
-  min-height: 38rem;
-  margin-inline: auto;
+  width: min(100%, 38rem);
+  min-height: 42rem;
+  justify-self: end;
 }
 
 .photo-card {
@@ -260,7 +260,7 @@ img {
   left: 38%;
   top: 0;
   width: 58%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 2 / 3;
   transform: rotate(2deg);
 }
 
@@ -269,7 +269,7 @@ img {
   top: 8.5rem;
   z-index: 2;
   width: 62%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 2 / 3;
   transform: rotate(-2.5deg);
 }
 
@@ -501,6 +501,10 @@ a:focus-visible {
     max-width: 40rem;
   }
 
+  .photo-stack {
+    justify-self: center;
+  }
+
   .contact-photo {
     width: min(100%, 25rem);
   }
@@ -542,7 +546,7 @@ a:focus-visible {
   }
 
   .photo-stack {
-    min-height: min(35rem, 150vw);
+    min-height: min(42rem, 125vw);
   }
 
   .field-break,
