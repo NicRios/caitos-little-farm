@@ -7,7 +7,7 @@ const contactDetails = [
   {
     number: '01',
     label: 'Say hello',
-    detail: 'hello@example.com',
+    detail: 'MC3caito@gmail.com',
   },
   {
     number: '02',
@@ -29,21 +29,25 @@ export default function Home() {
       </a>
 
       <header className="site-header">
-        <nav className="nav-group nav-left" aria-label="Primary navigation">
-          <a href="#story">Our story</a>
-          <a href="#visit">The farm</a>
-        </nav>
-
         <a
           className="wordmark"
           href="#top"
-          aria-label="Caito’s Little Farm, home"
+          aria-label="Caito’s Corner, home"
         >
-          Caito’s Little Farm
+          <Image
+            className="wordmark-mark"
+            src={assetPath('/logo/tree-of-life-logo-nav.svg')}
+            alt=""
+            aria-hidden="true"
+            width={860}
+            height={808}
+            unoptimized
+          />
+          Caito’s Corner
         </a>
 
-        <nav className="nav-group nav-right" aria-label="Secondary navigation">
-          <a href="#visit">Visit</a>
+        <nav className="nav-group nav-right" aria-label="Primary navigation">
+          <a href="#story">About</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
@@ -103,21 +107,19 @@ export default function Home() {
         </div>
 
         <div className="story-copy" id="story">
-          <p className="eyebrow">Rooted in simple things</p>
-          <h2 id="story-title">Small harvests. Big-hearted days.</h2>
+          <p className="eyebrow">Rooted in Simple Living</p>
+          <h2 id="story-title">More Than Just a Place to Stay</h2>
           <p>
-            Caito’s Little Farm is a place for muddy boots, open skies, and food
-            grown close to home. We’re making room for slower mornings and the
-            kind of moments that stay with you.
+            We think of our home as a tiny farm—a place where everyday life
+            has a little more room to breathe. The property is surrounded by
+            fruit trees, open yard space, and a few free-roaming chickens,
+            creating a relaxed setting that feels a world away from a typical
+            rental. Each unit offers its own private space, while the
+            property itself is designed around a shared appreciation for
+            healthy, active, and sustainable living. From growing and
+            harvesting what we can to spending time outdoors, we’ve created a
+            home where simple, thoughtful living is part of the experience.
           </p>
-          <p>
-            This space will soon hold seasonal notes, visiting details, and
-            stories from the field. For now, consider it an open gate—and a warm
-            invitation to say hello.
-          </p>
-          <a className="text-link" href="#contact">
-            Get in touch <span aria-hidden="true">↗</span>
-          </a>
         </div>
       </section>
 
@@ -134,7 +136,7 @@ export default function Home() {
           unoptimized
         />
         <div className="field-caption">
-          <span>Seasonal visits</span>
+          <span>Short term rentals</span>
           <strong>Come as you are.</strong>
         </div>
       </section>
@@ -145,24 +147,23 @@ export default function Home() {
         aria-labelledby="contact-title"
       >
         <div className="contact-intro">
-          <p className="eyebrow">Let’s keep in touch</p>
+          <p className="eyebrow">Get in Touch</p>
           <h2 id="contact-title">Come say hello.</h2>
           <p>
-            Questions, visit ideas, or simply curious about what’s growing? We’d
-            love to hear from you.
+            If you’re looking for a comfortable, welcoming place to stay
+            while you’re in transition, we’d love to hear from you. Reach
+            out to learn more about the property and available housing
+            options.
           </p>
-          <a className="primary-button" href="mailto:hello@example.com">
+          <a className="primary-button" href="mailto:MC3caito@gmail.com">
             Email the farm
           </a>
-          <small className="placeholder-note">
-            Replace the sample email and address before sharing publicly.
-          </small>
         </div>
 
         <figure className="contact-photo">
           <Image
-            src={assetPath('/placeholders/contact-farm.svg')}
-            alt="Placeholder for a welcoming photograph of the farm"
+            src={assetPath('/placeholders/contact-hosts-field.jpg')}
+            alt="The two of us smiling together in a golden wheat field at sunset"
             width={720}
             height={960}
             unoptimized
@@ -185,10 +186,19 @@ export default function Home() {
 
       <footer>
         <a className="footer-mark" href="#top">
-          Caito’s Little Farm
+          <Image
+            className="wordmark-mark"
+            src={assetPath('/logo/tree-of-life-logo-nav.svg')}
+            alt=""
+            aria-hidden="true"
+            width={860}
+            height={808}
+            unoptimized
+          />
+          Caito’s Corner
         </a>
         <p>Growing slowly. Welcoming warmly.</p>
-        <p>© {new Date().getFullYear()} Caito’s Little Farm</p>
+        <p>© {new Date().getFullYear()} Caito’s Corner</p>
       </footer>
     </main>
   );

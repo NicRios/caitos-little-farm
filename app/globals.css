@@ -3,16 +3,16 @@
 @import 'shadcn/tailwind.css';
 
 :root {
-  --paper: oklch(0.965 0.015 77);
+  --paper: var(--white-soft);
   --paper-deep: oklch(0.91 0.027 76);
-  --ink: oklch(0.28 0.033 35);
-  --ink-soft: oklch(0.45 0.027 44);
-  --plum: oklch(0.35 0.09 347);
-  --plum-dark: oklch(0.27 0.073 347);
+  --ink: #584738;
+  --ink-soft: #584738;
+  --plum: #584738;
+  --plum-dark: #584738;
   --clover: oklch(0.45 0.065 142);
   --wheat: oklch(0.78 0.105 78);
   --rule: oklch(0.74 0.029 61 / 55%);
-  --white-soft: oklch(0.99 0.006 75);
+  --white-soft: #f1eada;
   --display: 'Iowan Old Style', 'Baskerville', 'Times New Roman', serif;
   --hero-display: 'Bodoni 72', 'Didot', 'Bodoni MT', 'Times New Roman', serif;
   --body: 'Avenir Next', 'Segoe UI', 'Helvetica Neue', sans-serif;
@@ -64,15 +64,17 @@ img {
 }
 
 .site-header {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 10;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr auto;
   align-items: center;
   min-height: 5rem;
   padding: 0.75rem clamp(1.25rem, 4vw, 4.5rem);
-  background: var(--white-soft);
-  border-bottom: 1px solid var(--rule);
+  color: var(--white-soft);
 }
 
 .nav-group {
@@ -102,6 +104,9 @@ img {
 
 .wordmark,
 .footer-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   color: var(--plum);
   font-family: var(--display);
   font-size: clamp(1.35rem, 2.2vw, 2rem);
@@ -109,9 +114,18 @@ img {
   letter-spacing: -0.025em;
 }
 
+.wordmark {
+  color: var(--white-soft);
+}
+
+.wordmark-mark {
+  width: auto;
+  height: clamp(2.4rem, 3.96vw, 3.6rem);
+}
+
 .hero {
   position: relative;
-  min-height: min(72rem, calc(100svh - 5rem));
+  min-height: min(72rem, 100svh);
   overflow: hidden;
   display: grid;
   place-items: center;
@@ -138,14 +152,14 @@ img {
   background:
     radial-gradient(
       ellipse 62% 48% at 50% 47%,
-      oklch(0.1 0.025 155 / 46%),
+      color-mix(in srgb, var(--ink) 46%, transparent),
       transparent 74%
     ),
     linear-gradient(
       180deg,
-      oklch(0.12 0.03 155 / 56%) 0%,
-      oklch(0.14 0.03 155 / 44%) 46%,
-      oklch(0.11 0.025 36 / 66%) 100%
+      color-mix(in srgb, var(--ink) 56%, transparent) 0%,
+      color-mix(in srgb, var(--ink) 44%, transparent) 46%,
+      color-mix(in srgb, var(--ink) 66%, transparent) 100%
     );
 }
 
@@ -182,6 +196,10 @@ img {
   font-weight: 800;
   letter-spacing: 0.18em;
   text-transform: uppercase;
+}
+
+.contact-intro .eyebrow {
+  margin-bottom: 0.5rem;
 }
 
 .hero-eyebrow {
@@ -222,7 +240,10 @@ img {
   gap: clamp(3rem, 6vw, 6rem);
   align-items: start;
   min-height: 52rem;
-  padding: clamp(6rem, 10vw, 10rem) clamp(1.5rem, 9vw, 10rem);
+  padding-top: clamp(4.845rem, 8.075vw, 8.075rem);
+  padding-right: clamp(1.5rem, 9vw, 10rem);
+  padding-bottom: 0;
+  padding-left: clamp(1.5rem, 9vw, 10rem);
   background: var(--paper);
 }
 
@@ -237,7 +258,7 @@ img {
   position: absolute;
   margin: 0;
   padding: 0.65rem;
-  background: var(--white-soft);
+  background: var(--ink);
   box-shadow: 0 1.25rem 3rem oklch(0.27 0.04 42 / 13%);
 }
 
@@ -282,6 +303,10 @@ img {
   margin-top: clamp(2.5rem, 4vw, 3.5rem);
 }
 
+.contact-intro h2 + p {
+  margin-top: clamp(1.25rem, 1.75vw, 1.5rem);
+}
+
 .text-link {
   display: inline-flex;
   align-items: center;
@@ -307,19 +332,40 @@ img {
   object-fit: cover;
 }
 
+.field-break::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      ellipse 62% 48% at 50% 47%,
+      color-mix(in srgb, var(--ink) 23%, transparent),
+      transparent 74%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--ink) 28%, transparent) 0%,
+      color-mix(in srgb, var(--ink) 22%, transparent) 46%,
+      color-mix(in srgb, var(--ink) 33%, transparent) 100%
+    );
+}
+
 .field-caption {
   position: absolute;
   right: clamp(1.5rem, 6vw, 7rem);
   bottom: clamp(1.5rem, 6vw, 5rem);
+  z-index: 2;
   display: flex;
   flex-direction: column;
-  padding: 1.1rem 1.35rem;
+  padding: 1.6rem 1.96rem 1.48rem;
   background: var(--paper);
   color: var(--plum-dark);
 }
 
 .field-caption span {
-  font-size: 0.67rem;
+  font-size: 0.97rem;
   font-weight: 800;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -327,7 +373,7 @@ img {
 
 .field-caption strong {
   font-family: var(--display);
-  font-size: 1.55rem;
+  font-size: 2.25rem;
   font-style: italic;
   font-weight: 400;
 }
@@ -441,7 +487,7 @@ footer {
   min-height: 7rem;
   padding: 1.5rem clamp(1.5rem, 4vw, 4.5rem);
   background: var(--plum-dark);
-  color: var(--paper);
+  color: var(--white-soft);
 }
 
 footer p {
@@ -457,7 +503,7 @@ footer p:last-child {
 }
 
 .footer-mark {
-  color: var(--paper);
+  color: var(--white-soft);
 }
 
 a:focus-visible {
@@ -472,7 +518,7 @@ a:focus-visible {
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(-20px);
   }
 }
 
@@ -506,17 +552,7 @@ a:focus-visible {
 
 @media (max-width: 680px) {
   .site-header {
-    grid-template-columns: 1fr auto;
     min-height: 4.5rem;
-  }
-
-  .wordmark {
-    justify-self: start;
-  }
-
-  .nav-left,
-  .nav-right a:first-child {
-    display: none;
   }
 
   .nav-right {
@@ -524,7 +560,7 @@ a:focus-visible {
   }
 
   .hero {
-    min-height: calc(100svh - 4.5rem);
+    min-height: 100svh;
   }
 
   .hero h1 {
