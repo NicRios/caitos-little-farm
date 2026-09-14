@@ -129,7 +129,7 @@ img {
 
 .hero-image {
   z-index: -3;
-  transform: scale(1.025) translateX(1%);
+  transform: scale(1.06) translate(1%, -2.25%);
   transform-origin: center;
 }
 
