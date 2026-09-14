@@ -134,8 +134,8 @@ export default function Home() {
         aria-label="Farm visit preview"
       >
         <Image
-          src={assetPath('/placeholders/farm-wide.svg')}
-          alt="Placeholder for a panoramic photograph of the farm"
+          src={assetPath('/placeholders/backyard-farm-panorama.jpg')}
+          alt="Wide view of the Caito backyard with a gazebo, garden house, swings, and a dog at sunset"
           width={1600}
           height={760}
           unoptimized
