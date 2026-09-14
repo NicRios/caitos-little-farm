@@ -60,8 +60,8 @@ export default function Home() {
         />
         <div className="hero-wash" aria-hidden="true">
           <Image
-            className="hero-wave-divider"
-            src={assetPath('/placeholders/hero-wave-divider.svg')}
+            className="hero-mountain-divider"
+            src={assetPath('/placeholders/hero-mountain-divider.svg')}
             alt=""
             width={1600}
             height={440}

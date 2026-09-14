@@ -1,6 +1,6 @@
 # Caito’s Little Farm
 
-A responsive, single-page farm website inspired by an airy editorial travel layout. The hero uses a finished photograph of the Caito home; four remaining sections use temporary SVG artwork. This guide explains exactly how to replace any image without changing the layout.
+A responsive, single-page farm website inspired by an airy editorial travel layout. The hero, story, and panoramic sections use finished photographs; the contact section still uses temporary SVG artwork. This guide explains exactly how to replace any image without changing the layout.
 
 ## Live site and publishing
 
@@ -15,7 +15,7 @@ Every change merged into `main` is built and deployed to GitHub Pages automatica
 
 - [`app/page.tsx`](app/page.tsx) contains all page text, image filenames, image dimensions, and alt text.
 - [`app/globals.css`](app/globals.css) controls the layout, colors, image crops, spacing, and responsive behavior.
-- [`public/placeholders/`](public/placeholders/) contains the finished hero photo, the decorative green wave divider, and the four temporary image files that still need to be replaced.
+- [`public/placeholders/`](public/placeholders/) contains the finished photographs, the decorative mountain divider, and the remaining temporary contact image.
 - [`app/icon.svg`](app/icon.svg) is the browser-tab icon.
 - [`README.md`](README.md) is this editing and publishing guide.
 
@@ -201,14 +201,14 @@ Confirm all of the following:
 - Images are sharp but still within the suggested file-size limits.
 - Every final photo has accurate alt text.
 
-## Green hero divider
+## Mountain hero divider
 
-The green two-layer wave at the bottom of the hero is a decorative graphic, not a photo placeholder. Its artwork lives in [`public/placeholders/hero-wave-divider.svg`](public/placeholders/hero-wave-divider.svg), its page placement is in [`app/page.tsx` lines 61–70](app/page.tsx#L61-L70), and its height and opacity are controlled by [`app/globals.css` lines 140–149](app/globals.css#L140-L149).
+The single ivory ridge at the bottom of the hero is a decorative mountain silhouette, not a photo placeholder. Its artwork lives in [`public/placeholders/hero-mountain-divider.svg`](public/placeholders/hero-mountain-divider.svg), its page placement is in [`app/page.tsx` lines 61–70](app/page.tsx#L61-L70), and its height is controlled by [`app/globals.css`](app/globals.css).
 
-- To make the divider taller or shorter, adjust `height` in `.hero-wave-divider`.
-- To make it more or less prominent, adjust `opacity`.
-- To change the greens, edit the two `fill` values in the SVG.
-- Keep the SVG transparent so the hero photograph remains visible above the curves.
+- To make the divider taller or shorter, adjust `height` in `.hero-mountain-divider`.
+- To reshape the ridge, edit the SVG path while keeping its 1600 × 440 view box.
+- To change its color, edit the single `fill` value in the SVG; it should match the paper-colored story section below.
+- Keep the area above the ridge transparent so the hero photograph remains visible around the silhouette.
 
 ## Replace the remaining sample contact details
 
