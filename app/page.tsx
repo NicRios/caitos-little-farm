@@ -61,7 +61,7 @@ export default function Home() {
         <div className="hero-wash" aria-hidden="true">
           <Image
             className="hero-mountain-divider"
-            src={assetPath('/placeholders/hero-mountain-divider.svg')}
+            src={assetPath('/placeholders/hero-alpine-divider.svg')}
             alt=""
             width={1600}
             height={440}

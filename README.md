@@ -203,7 +203,7 @@ Confirm all of the following:
 
 ## Mountain hero divider
 
-The single ivory ridge at the bottom of the hero is a decorative mountain silhouette, not a photo placeholder. Its artwork lives in [`public/placeholders/hero-mountain-divider.svg`](public/placeholders/hero-mountain-divider.svg), its page placement is in [`app/page.tsx` lines 61–70](app/page.tsx#L61-L70), and its height is controlled by [`app/globals.css`](app/globals.css).
+The single ivory range at the bottom of the hero is a decorative alpine silhouette with distinct peaks and valleys, not a photo placeholder. Its artwork lives in [`public/placeholders/hero-alpine-divider.svg`](public/placeholders/hero-alpine-divider.svg), its page placement is in [`app/page.tsx` lines 61–70](app/page.tsx#L61-L70), and its height is controlled by [`app/globals.css`](app/globals.css).
 
 - To make the divider taller or shorter, adjust `height` in `.hero-mountain-divider`.
 - To reshape the ridge, edit the SVG path while keeping its 1600 × 440 view box.
