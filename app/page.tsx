@@ -74,13 +74,6 @@ export default function Home() {
             The Caito Home
           </h1>
         </div>
-        <a
-          className="scroll-cue"
-          href="#main-content"
-          aria-label="Continue to the farm story"
-        >
-          <span aria-hidden="true">↓</span>
-        </a>
       </section>
 
       <section
