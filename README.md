@@ -203,10 +203,10 @@ Confirm all of the following:
 
 ## Mountain hero divider
 
-The single ivory range at the bottom of the hero is a decorative alpine silhouette with one dominant summit, one broad secondary peak, and a long foothill taper, not a photo placeholder. Its artwork lives in [`public/placeholders/hero-simple-mountain-divider.svg`](public/placeholders/hero-simple-mountain-divider.svg), its page placement is in [`app/page.tsx` lines 61–70](app/page.tsx#L61-L70), and its height is controlled by [`app/globals.css`](app/globals.css).
+The ivory range at the bottom of the hero is a traced silhouette of the supplied two-summit mountain reference, not a photo placeholder. It preserves the reference's small left shoulder, tall first summit, central saddle, tall second summit, smaller right shoulder, and long descending right ridge. Its artwork lives in [`public/placeholders/hero-reference-mountain-divider.svg`](public/placeholders/hero-reference-mountain-divider.svg), its page placement is in [`app/page.tsx` lines 61–70](app/page.tsx#L61-L70), and its displayed height is controlled by [`app/globals.css`](app/globals.css).
 
 - To make the divider taller or shorter, adjust `height` in `.hero-mountain-divider`.
-- To reshape the ridge, edit the SVG path while keeping its 1600 × 440 view box.
+- To reshape the ridge, edit the SVG path while keeping its 1118 × 301 view box, which matches the proportions of the supplied reference image.
 - To change its color, edit the single `fill` value in the SVG; it should match the paper-colored story section below.
 - Keep the area above the ridge transparent so the hero photograph remains visible around the silhouette.
 
