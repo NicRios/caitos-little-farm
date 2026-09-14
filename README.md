@@ -39,11 +39,11 @@ Then open [http://localhost:3000](http://localhost:3000). Leave the command runn
 
 Use original, high-resolution photographs. Crop and export each photo to the exact pixel size below. A larger export is acceptable only when it uses the same aspect ratio; otherwise the layout will crop part of the photo.
 
-| Page placement | Current placeholder | Image code | Export size | Ratio | Suggested maximum file size |
+| Page placement | Current image | Image code | Export size | Ratio | Suggested maximum file size |
 | --- | --- | --- | ---: | ---: | ---: |
 | Full-screen hero | [`hero-caito-home-natural-foliage.jpg`](public/placeholders/hero-caito-home-natural-foliage.jpg) | [`app/page.tsx` lines 52–60](app/page.tsx#L52-L60) | 1600 × 980 px | 80:49 landscape | 700 KB |
-| Back image in overlapping pair | [`farm-detail.svg`](public/placeholders/farm-detail.svg) | [`app/page.tsx` lines 93–99](app/page.tsx#L93-L99) | 720 × 1080 px | 2:3 portrait | 400 KB |
-| Front image in overlapping pair | [`farm-portrait.svg`](public/placeholders/farm-portrait.svg) | [`app/page.tsx` lines 102–108](app/page.tsx#L102-L108) | 720 × 1080 px | 2:3 portrait | 400 KB |
+| Back image in overlapping pair | [`home-vanity-detail.jpg`](public/placeholders/home-vanity-detail.jpg) | [`app/page.tsx` lines 93–99](app/page.tsx#L93-L99) | 720 × 1080 px | 2:3 portrait | 400 KB |
+| Front image in overlapping pair | [`guest-room-portrait.jpg`](public/placeholders/guest-room-portrait.jpg) | [`app/page.tsx` lines 102–108](app/page.tsx#L102-L108) | 720 × 1080 px | 2:3 portrait | 400 KB |
 | Full-width farm panorama | [`farm-wide.svg`](public/placeholders/farm-wide.svg) | [`app/page.tsx` lines 136–142](app/page.tsx#L136-L142) | 1600 × 760 px | 40:19 landscape | 700 KB |
 | Contact-section portrait | [`contact-farm.svg`](public/placeholders/contact-farm.svg) | [`app/page.tsx` lines 170–176](app/page.tsx#L170-L176) | 720 × 960 px | 3:4 portrait | 450 KB |
 
@@ -78,9 +78,9 @@ Composition requirements:
 
 Example alt text: `Late-afternoon light over the fields at Caito’s Little Farm`.
 
-### 2. Farm detail image — back of the overlapping pair
+### 2. Home detail image — back of the overlapping pair
 
-- File to replace: [`public/placeholders/farm-detail.svg`](public/placeholders/farm-detail.svg)
+- Current file: [`public/placeholders/home-vanity-detail.jpg`](public/placeholders/home-vanity-detail.jpg)
 - Code to update: [`app/page.tsx` lines 93–99](app/page.tsx#L93-L99)
 - Required crop: **720 × 1080 px, 2:3 portrait**
 
@@ -95,9 +95,9 @@ Composition requirements:
 
 Example alt text: `Hands planting young lettuce seedlings in dark soil`.
 
-### 3. Farm portrait image — front of the overlapping pair
+### 3. Home portrait image — front of the overlapping pair
 
-- File to replace: [`public/placeholders/farm-portrait.svg`](public/placeholders/farm-portrait.svg)
+- Current file: [`public/placeholders/guest-room-portrait.jpg`](public/placeholders/guest-room-portrait.jpg)
 - Code to update: [`app/page.tsx` lines 102–108](app/page.tsx#L102-L108)
 - Required crop: **720 × 1080 px, 2:3 portrait**
 
@@ -148,7 +148,7 @@ Example alt text: `An open wooden gate leading toward the garden and farmhouse`.
 
 ## How to install a final photo
 
-Repeat these steps for any image you want to replace. The hero is already a finished photograph; the other four image positions still use SVG placeholders.
+Repeat these steps for any image you want to replace. The hero and both overlapping story frames are finished photographs; the panorama and contact image still use SVG placeholders.
 
 1. Crop the original photograph to the required aspect ratio and export it at the listed dimensions.
 2. Give it a clear matching name, such as `hero-caito-home-natural-foliage.jpg`, `farm-detail.webp`, `farm-portrait.webp`, `farm-wide.webp`, or `contact-farm.webp`.
