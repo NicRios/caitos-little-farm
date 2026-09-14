@@ -51,7 +51,7 @@ export default function Home() {
       <section className="hero" id="top" aria-labelledby="hero-title">
         <Image
           className="hero-image"
-          src={assetPath('/placeholders/hero-caito-home-straight.jpg')}
+          src={assetPath('/placeholders/hero-caito-home-natural-depth.jpg')}
           alt="Straight-on view of the red Caito home framed by trees in warm evening light"
           width={1600}
           height={980}
