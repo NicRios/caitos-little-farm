@@ -72,7 +72,7 @@ Composition requirements:
 - Keep the central third relatively quiet because the large white headline sits in the middle.
 - Keep the main subject away from the extreme left and right edges; mobile screens crop both sides.
 - If the home is the subject, show its full front elevation with breathing room on both sides and avoid wide-angle distortion.
-- The current hero crop is biased toward the lower part of the photograph with `object-position: center 68%` in `.hero-image`, keeping more of the sidewalk visible and less sky above the roofline.
+- The current hero crop is anchored to the bottom of the photograph with `object-position: center bottom` in `.hero-image`, showing the maximum available sidewalk and less sky above the roofline.
 - Favor a darker or mid-tone center so the white headline remains readable.
 - Avoid a close face, animal, sign, or other essential detail in the center behind the text.
 - Review the image on both desktop and mobile before approving the crop.
