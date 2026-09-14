@@ -133,8 +133,17 @@ img {
 .hero-wash {
   z-index: -2;
   background:
-    linear-gradient(180deg, oklch(0.19 0.04 159 / 18%), transparent 42%),
-    linear-gradient(0deg, oklch(0.17 0.025 36 / 44%), transparent 52%);
+    radial-gradient(
+      ellipse 62% 48% at 50% 47%,
+      oklch(0.1 0.025 155 / 46%),
+      transparent 74%
+    ),
+    linear-gradient(
+      180deg,
+      oklch(0.12 0.03 155 / 56%) 0%,
+      oklch(0.14 0.03 155 / 44%) 46%,
+      oklch(0.11 0.025 36 / 66%) 100%
+    );
 }
 
 .hero-wave-divider {
