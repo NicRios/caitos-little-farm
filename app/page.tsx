@@ -94,7 +94,7 @@ export default function Home() {
               src={assetPath('/placeholders/farm-detail.svg')}
               alt="Placeholder for a close-up farm photograph"
               width={720}
-              height={900}
+              height={1080}
               unoptimized
             />
           </figure>
@@ -103,7 +103,7 @@ export default function Home() {
               src={assetPath('/placeholders/farm-portrait.svg')}
               alt="Placeholder for a portrait photograph from the farm"
               width={720}
-              height={900}
+              height={1080}
               unoptimized
             />
           </figure>

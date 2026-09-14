@@ -42,8 +42,8 @@ Use original, high-resolution photographs. Crop and export each photo to the exa
 | Page placement | Current placeholder | Image code | Export size | Ratio | Suggested maximum file size |
 | --- | --- | --- | ---: | ---: | ---: |
 | Full-screen hero | [`hero-caito-home-straight.jpg`](public/placeholders/hero-caito-home-straight.jpg) | [`app/page.tsx` lines 52–60](app/page.tsx#L52-L60) | 1600 × 980 px | 80:49 landscape | 700 KB |
-| Back image in overlapping pair | [`farm-detail.svg`](public/placeholders/farm-detail.svg) | [`app/page.tsx` lines 93–99](app/page.tsx#L93-L99) | 720 × 900 px | 4:5 portrait | 400 KB |
-| Front image in overlapping pair | [`farm-portrait.svg`](public/placeholders/farm-portrait.svg) | [`app/page.tsx` lines 102–108](app/page.tsx#L102-L108) | 720 × 900 px | 4:5 portrait | 400 KB |
+| Back image in overlapping pair | [`farm-detail.svg`](public/placeholders/farm-detail.svg) | [`app/page.tsx` lines 93–99](app/page.tsx#L93-L99) | 720 × 1080 px | 2:3 portrait | 400 KB |
+| Front image in overlapping pair | [`farm-portrait.svg`](public/placeholders/farm-portrait.svg) | [`app/page.tsx` lines 102–108](app/page.tsx#L102-L108) | 720 × 1080 px | 2:3 portrait | 400 KB |
 | Full-width farm panorama | [`farm-wide.svg`](public/placeholders/farm-wide.svg) | [`app/page.tsx` lines 136–142](app/page.tsx#L136-L142) | 1600 × 760 px | 40:19 landscape | 700 KB |
 | Contact-section portrait | [`contact-farm.svg`](public/placeholders/contact-farm.svg) | [`app/page.tsx` lines 170–176](app/page.tsx#L170-L176) | 720 × 960 px | 3:4 portrait | 450 KB |
 
@@ -82,7 +82,7 @@ Example alt text: `Late-afternoon light over the fields at Caito’s Little Farm
 
 - File to replace: [`public/placeholders/farm-detail.svg`](public/placeholders/farm-detail.svg)
 - Code to update: [`app/page.tsx` lines 93–99](app/page.tsx#L93-L99)
-- Required crop: **720 × 900 px, 4:5 portrait**
+- Required crop: **720 × 1080 px, 2:3 portrait**
 
 Use a close detail that shows texture, work, or care. Strong subjects include hands in soil, seedlings, flowers, eggs, vegetables, a harvest basket, a well-used tool, boots, fur, feathers, or a small architectural detail from the farm.
 
@@ -99,7 +99,7 @@ Example alt text: `Hands planting young lettuce seedlings in dark soil`.
 
 - File to replace: [`public/placeholders/farm-portrait.svg`](public/placeholders/farm-portrait.svg)
 - Code to update: [`app/page.tsx` lines 102–108](app/page.tsx#L102-L108)
-- Required crop: **720 × 900 px, 4:5 portrait**
+- Required crop: **720 × 1080 px, 2:3 portrait**
 
 Use the more personal or story-driven image of the pair. Good options include Caito working, a farm animal, a person holding a harvest basket, a greenhouse aisle, a doorway, or a vertical view down a crop row.
 
