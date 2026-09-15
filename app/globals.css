@@ -151,15 +151,15 @@ img {
   z-index: -2;
   background:
     radial-gradient(
-      ellipse 62% 48% at 50% 47%,
-      color-mix(in srgb, var(--ink) 46%, transparent),
-      transparent 74%
+      ellipse 64% 52% at 50% 43%,
+      oklch(0.17 0.025 65 / 64%),
+      transparent 76%
     ),
     linear-gradient(
       180deg,
-      color-mix(in srgb, var(--ink) 56%, transparent) 0%,
-      color-mix(in srgb, var(--ink) 44%, transparent) 46%,
-      color-mix(in srgb, var(--ink) 66%, transparent) 100%
+      oklch(0.17 0.025 65 / 58%) 0%,
+      oklch(0.17 0.025 65 / 48%) 48%,
+      oklch(0.17 0.025 65 / 64%) 100%
     );
 }
 
@@ -340,15 +340,15 @@ img {
   pointer-events: none;
   background:
     radial-gradient(
-      ellipse 62% 48% at 50% 47%,
-      color-mix(in srgb, var(--ink) 23%, transparent),
-      transparent 74%
+      ellipse 64% 54% at 50% 48%,
+      oklch(0.17 0.025 65 / 42%),
+      transparent 78%
     ),
     linear-gradient(
       180deg,
-      color-mix(in srgb, var(--ink) 28%, transparent) 0%,
-      color-mix(in srgb, var(--ink) 22%, transparent) 46%,
-      color-mix(in srgb, var(--ink) 33%, transparent) 100%
+      oklch(0.17 0.025 65 / 42%) 0%,
+      oklch(0.17 0.025 65 / 34%) 48%,
+      oklch(0.17 0.025 65 / 48%) 100%
     );
 }
 
