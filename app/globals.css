@@ -396,7 +396,8 @@ img {
   row-gap: 3.5rem;
   align-items: start;
   justify-content: center;
-  padding: clamp(5rem, 7vw, 7rem) clamp(1.5rem, 6vw, 7rem);
+  padding: clamp(6rem, 8.4vw, 8.4rem) clamp(1.5rem, 6vw, 7rem)
+    clamp(5rem, 7vw, 7rem);
   background: var(--white-soft);
 }
 
@@ -499,6 +500,7 @@ img {
   color: var(--plum);
   font-family: var(--display);
   font-size: 2rem;
+  font-weight: 500;
   line-height: 1;
 }
 
@@ -514,8 +516,12 @@ img {
 .contact-item p {
   margin: 0.35rem 0 0;
   color: var(--ink-soft);
-  font-size: 0.95rem;
+  font-family: var(--accent);
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.035em;
   line-height: 1.45;
+  -webkit-text-stroke: 0.2px currentColor;
 }
 
 footer {
@@ -632,7 +638,8 @@ a:focus-visible {
 
   .contact-section {
     gap: 3rem;
-    padding-block: 4.5rem;
+    padding-top: 5.4rem;
+    padding-bottom: 4.5rem;
   }
 
   .contact-intro h2 {
