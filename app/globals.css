@@ -468,8 +468,9 @@ img {
 .contact-list {
   display: grid;
   grid-template-rows: repeat(3, minmax(0, 1fr));
-  align-self: stretch;
+  align-self: start;
   width: 100%;
+  height: calc(100% - 2.35rem);
   margin-top: 0;
   border-top: 1px solid var(--rule);
 }
@@ -564,7 +565,9 @@ a:focus-visible {
   }
 
   .contact-list {
+    align-self: stretch;
     width: 100%;
+    height: auto;
     margin-top: 0;
   }
 }
