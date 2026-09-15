@@ -133,7 +133,7 @@ img {
 
 .hero {
   position: relative;
-  min-height: min(57.6rem, 80svh);
+  min-height: min(64rem, 92svh);
   overflow: hidden;
   display: grid;
   place-items: center;
