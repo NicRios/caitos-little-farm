@@ -645,7 +645,7 @@ a:focus-visible {
 
 @media (min-width: 681px) and (max-width: 980px) {
   .hero-copy {
-    inset: calc(-10% + 12px) 0 calc(10% - 12px);
+    inset: calc(-10% + 17px) 0 calc(10% - 17px);
   }
 
   .story-section {
@@ -688,12 +688,6 @@ a:focus-visible {
   .story-copy > p:not(.eyebrow) {
     font-size: 1rem;
     line-height: 1.65;
-  }
-
-  .field-caption {
-    right: auto;
-    left: 55%;
-    transform: translateX(-50%);
   }
 
   .contact-section {
