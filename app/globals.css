@@ -122,6 +122,10 @@ img {
   color: var(--white-soft);
 }
 
+.wordmark-corner {
+  margin-left: 0.22em;
+}
+
 .wordmark-mark {
   width: auto;
   height: clamp(2.4rem, 3.96vw, 3.6rem);
@@ -728,10 +732,44 @@ a:focus-visible {
   }
 
   .wordmark {
-    gap: 0.4rem;
-    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 0.55rem;
+    justify-self: stretch;
+    width: 100%;
     font-size: 1.2rem;
     white-space: nowrap;
+  }
+
+  .wordmark-label {
+    display: contents;
+  }
+
+  .wordmark-caito,
+  .wordmark-corner,
+  .wordmark > .wordmark-mark {
+    grid-row: 1;
+  }
+
+  .wordmark-caito {
+    grid-column: 1;
+    justify-self: end;
+  }
+
+  .wordmark > .wordmark-mark {
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  .wordmark-corner {
+    grid-column: 3;
+    justify-self: start;
+    margin-left: 0;
+  }
+
+  .wordmark-possessive {
+    display: none;
   }
 
   .wordmark-mark {

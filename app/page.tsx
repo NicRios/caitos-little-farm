@@ -43,7 +43,12 @@ export default function Home() {
             height={808}
             unoptimized
           />
-          Caito’s Corner
+          <span className="wordmark-label">
+            <span className="wordmark-caito">
+              Caito<span className="wordmark-possessive">’s</span>
+            </span>
+            <span className="wordmark-corner">Corner</span>
+          </span>
         </a>
 
         <nav className="nav-group nav-right" aria-label="Primary navigation">
