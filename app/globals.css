@@ -722,13 +722,14 @@ a:focus-visible {
 
 @media (max-width: 680px) {
   .site-header {
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: 1fr;
     min-height: 4.5rem;
     padding: 0.6rem 1rem;
   }
 
   .wordmark {
     gap: 0.4rem;
+    justify-self: center;
     font-size: 1.2rem;
     white-space: nowrap;
   }
@@ -744,7 +745,7 @@ a:focus-visible {
   }
 
   .nav-right {
-    display: flex;
+    display: none;
   }
 
   .hero {
