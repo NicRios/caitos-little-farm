@@ -17,7 +17,7 @@ const contactDetails = [
   {
     number: '03',
     label: 'Find the farm',
-    detail: 'Address coming soon',
+    detail: 'West Valley City, Utah',
   },
 ];
 
@@ -129,8 +129,8 @@ export default function Home() {
         aria-label="Farm visit preview"
       >
         <Image
-          src={assetPath('/placeholders/backyard-farm-panorama-no-red-swing-bush.png')}
-          alt="Five chickens roaming the Caito backyard beside a flowering bush, gazebo, and garden house at sunset"
+          src={assetPath('/placeholders/backyard-farm-panorama-balanced-chickens.png')}
+          alt="Six chickens roaming the Caito backyard beside a flowering bush, gazebo, and garden house at sunset"
           width={1600}
           height={760}
           unoptimized

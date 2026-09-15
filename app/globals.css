@@ -125,7 +125,7 @@ img {
 
 .hero {
   position: relative;
-  min-height: min(72rem, 100svh);
+  min-height: min(64.8rem, 90svh);
   overflow: hidden;
   display: grid;
   place-items: center;
@@ -199,7 +199,7 @@ img {
 }
 
 .contact-intro .eyebrow {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.9rem;
 }
 
 .hero-eyebrow {
@@ -304,7 +304,7 @@ img {
 }
 
 .contact-intro h2 + p {
-  margin-top: clamp(1.25rem, 1.75vw, 1.5rem);
+  margin-top: clamp(1.75rem, 2.25vw, 2.15rem);
 }
 
 .text-link {
@@ -380,15 +380,19 @@ img {
 
 .contact-section {
   display: grid;
-  grid-template-columns: 1fr minmax(16rem, 0.58fr) 1fr;
-  gap: clamp(2rem, 5vw, 5.5rem);
-  align-items: center;
-  padding: clamp(6rem, 10vw, 9rem) clamp(1.5rem, 7vw, 8rem);
+  grid-template-columns:
+    minmax(18rem, 29rem) minmax(18rem, 23rem) minmax(20rem, 30rem);
+  column-gap: clamp(3rem, 5vw, 6rem);
+  row-gap: 4rem;
+  align-items: start;
+  justify-content: center;
+  padding: clamp(5.5rem, 8vw, 7.5rem) clamp(1.5rem, 6vw, 7rem);
   background: var(--white-soft);
 }
 
 .contact-intro {
-  max-width: 31rem;
+  max-width: 29rem;
+  padding-top: 1.25rem;
 }
 
 .primary-button {
@@ -396,7 +400,7 @@ img {
   align-items: center;
   justify-content: center;
   min-height: 3rem;
-  margin-top: 1.25rem;
+  margin-top: 2rem;
   padding: 0.75rem 1.35rem;
   background: var(--plum);
   border: 1px solid var(--plum);
@@ -428,7 +432,10 @@ img {
 }
 
 .contact-photo {
+  width: 100%;
+  max-width: 23rem;
   margin: 0;
+  justify-self: center;
 }
 
 .contact-photo img {
@@ -437,46 +444,49 @@ img {
 }
 
 .contact-photo figcaption {
-  margin-top: 0.75rem;
+  margin-top: 1rem;
   color: var(--plum);
   font-family: var(--display);
   font-size: 1.1rem;
   font-style: italic;
+  line-height: 1.35;
   text-align: center;
 }
 
 .contact-list {
+  width: 100%;
+  margin-top: 1.25rem;
   border-top: 1px solid var(--rule);
 }
 
 .contact-item {
   display: grid;
-  grid-template-columns: 3.25rem 1fr;
-  gap: 1rem;
-  padding: 1.45rem 0;
+  grid-template-columns: 3.75rem 1fr;
+  gap: 1.25rem;
+  padding: 2rem 0;
   border-bottom: 1px solid var(--rule);
 }
 
 .contact-number {
   color: var(--plum);
   font-family: var(--display);
-  font-size: 2rem;
+  font-size: 2.1rem;
   line-height: 1;
 }
 
 .contact-item h3 {
   margin: 0;
   font-family: var(--display);
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   font-style: italic;
   font-weight: 400;
   line-height: 1.2;
 }
 
 .contact-item p {
-  margin: 0.3rem 0 0;
+  margin: 0.45rem 0 0;
   color: var(--ink-soft);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 footer {
@@ -537,6 +547,10 @@ a:focus-visible {
     max-width: 40rem;
   }
 
+  .contact-intro {
+    padding-top: 0;
+  }
+
   .photo-stack {
     justify-self: center;
   }
@@ -547,6 +561,7 @@ a:focus-visible {
 
   .contact-list {
     width: 100%;
+    margin-top: 0;
   }
 }
 
@@ -560,7 +575,7 @@ a:focus-visible {
   }
 
   .hero {
-    min-height: 100svh;
+    min-height: 90svh;
   }
 
   .hero h1 {
