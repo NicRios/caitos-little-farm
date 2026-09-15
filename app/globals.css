@@ -304,7 +304,7 @@ img {
 }
 
 .contact-intro h2 + p {
-  margin-top: clamp(1.75rem, 2.25vw, 2.15rem);
+  margin-top: clamp(1.65rem, 2vw, 2rem);
 }
 
 .text-link {
@@ -381,18 +381,30 @@ img {
 .contact-section {
   display: grid;
   grid-template-columns:
-    minmax(18rem, 29rem) minmax(18rem, 23rem) minmax(20rem, 30rem);
-  column-gap: clamp(3rem, 5vw, 6rem);
-  row-gap: 4rem;
+    minmax(15rem, 25rem) minmax(16rem, 21rem) minmax(17rem, 27rem);
+  column-gap: clamp(2rem, 3.5vw, 5rem);
+  row-gap: 3.5rem;
   align-items: start;
   justify-content: center;
-  padding: clamp(5.5rem, 8vw, 7.5rem) clamp(1.5rem, 6vw, 7rem);
+  padding: clamp(5rem, 7vw, 7rem) clamp(1.5rem, 6vw, 7rem);
   background: var(--white-soft);
 }
 
 .contact-intro {
-  max-width: 29rem;
-  padding-top: 1.25rem;
+  max-width: 25rem;
+}
+
+.contact-intro h2 {
+  max-width: 7ch;
+  font-size: clamp(3.4rem, 4.4vw, 4.65rem);
+  line-height: 0.95;
+}
+
+.contact-intro > p:not(.eyebrow) {
+  max-width: 25rem;
+  margin-bottom: 0;
+  font-size: 1.05rem;
+  line-height: 1.75;
 }
 
 .primary-button {
@@ -400,7 +412,7 @@ img {
   align-items: center;
   justify-content: center;
   min-height: 3rem;
-  margin-top: 2rem;
+  margin-top: 1.75rem;
   padding: 0.75rem 1.35rem;
   background: var(--plum);
   border: 1px solid var(--plum);
@@ -433,7 +445,7 @@ img {
 
 .contact-photo {
   width: 100%;
-  max-width: 23rem;
+  max-width: 21rem;
   margin: 0;
   justify-self: center;
 }
@@ -444,7 +456,7 @@ img {
 }
 
 .contact-photo figcaption {
-  margin-top: 1rem;
+  margin-top: 0.85rem;
   color: var(--plum);
   font-family: var(--display);
   font-size: 1.1rem;
@@ -454,39 +466,44 @@ img {
 }
 
 .contact-list {
+  display: grid;
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  align-self: stretch;
   width: 100%;
-  margin-top: 1.25rem;
+  margin-top: 0;
   border-top: 1px solid var(--rule);
 }
 
 .contact-item {
   display: grid;
-  grid-template-columns: 3.75rem 1fr;
-  gap: 1.25rem;
-  padding: 2rem 0;
+  grid-template-columns: 3.25rem 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.6rem 0;
   border-bottom: 1px solid var(--rule);
 }
 
 .contact-number {
   color: var(--plum);
   font-family: var(--display);
-  font-size: 2.1rem;
+  font-size: 2rem;
   line-height: 1;
 }
 
 .contact-item h3 {
   margin: 0;
   font-family: var(--display);
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   font-style: italic;
   font-weight: 400;
   line-height: 1.2;
 }
 
 .contact-item p {
-  margin: 0.45rem 0 0;
+  margin: 0.35rem 0 0;
   color: var(--ink-soft);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.45;
 }
 
 footer {
@@ -532,27 +549,14 @@ a:focus-visible {
   }
 }
 
-@media (max-width: 900px) {
-  .story-section,
+@media (max-width: 980px) {
   .contact-section {
     grid-template-columns: 1fr;
   }
 
-  .story-section {
-    gap: 3rem;
-  }
-
-  .story-copy,
   .contact-intro {
     max-width: 40rem;
-  }
-
-  .contact-intro {
     padding-top: 0;
-  }
-
-  .photo-stack {
-    justify-self: center;
   }
 
   .contact-photo {
@@ -562,6 +566,21 @@ a:focus-visible {
   .contact-list {
     width: 100%;
     margin-top: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .story-section {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .story-copy {
+    max-width: 40rem;
+  }
+
+  .photo-stack {
+    justify-self: center;
   }
 }
 
@@ -594,6 +613,15 @@ a:focus-visible {
   .field-break img {
     min-height: 31rem;
     height: 31rem;
+  }
+
+  .contact-section {
+    gap: 3rem;
+    padding-block: 4.5rem;
+  }
+
+  .contact-intro h2 {
+    font-size: clamp(3.2rem, 15vw, 4rem);
   }
 
   footer {
