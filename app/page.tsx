@@ -200,7 +200,12 @@ export default function Home() {
             height={808}
             unoptimized
           />
-          Caito’s Corner
+          <span className="wordmark-label">
+            <span className="wordmark-caito">
+              Caito<span className="wordmark-possessive">’s</span>
+            </span>
+            <span className="wordmark-corner">Corner</span>
+          </span>
         </a>
         <p>Growing slowly. Welcoming warmly.</p>
         <p>© {new Date().getFullYear()} Caito’s Corner</p>
