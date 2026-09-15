@@ -648,6 +648,14 @@ a:focus-visible {
     inset: calc(-10% + 17px) 0 calc(10% - 17px);
   }
 
+  .hero-eyebrow {
+    font-size: 1.1rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(5rem, 11vw, 6.75rem);
+  }
+
   .story-section {
     grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
     gap: clamp(2rem, 4vw, 3rem);
@@ -692,6 +700,10 @@ a:focus-visible {
 
   .contact-section {
     padding-bottom: 0;
+  }
+
+  .contact-intro .primary-button {
+    margin-top: calc(1.75rem + 5px);
   }
 
   footer p:first-of-type {
