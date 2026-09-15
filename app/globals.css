@@ -778,7 +778,7 @@ a:focus-visible {
     grid-template-columns: 1fr;
     gap: 3rem;
     min-height: auto;
-    padding: 3.6rem 1.25rem calc(4.75rem + 15px);
+    padding: 3.6rem 1.25rem calc(4.75rem + 25px);
   }
 
   .story-copy {
