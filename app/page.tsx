@@ -129,7 +129,7 @@ export default function Home() {
         aria-label="Farm visit preview"
       >
         <Image
-          src={assetPath('/placeholders/backyard-farm-panorama-natural-chickens.png')}
+          src={assetPath('/placeholders/backyard-farm-panorama-no-red-swing-bush.png')}
           alt="Five chickens roaming the Caito backyard beside a flowering bush, gazebo, and garden house at sunset"
           width={1600}
           height={760}

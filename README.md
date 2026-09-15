@@ -44,7 +44,7 @@ Use original, high-resolution photographs. Crop and export each photo to the exa
 | Full-screen hero | [`hero-caito-home-natural-foliage.jpg`](public/placeholders/hero-caito-home-natural-foliage.jpg) | [`app/page.tsx` lines 52–60](app/page.tsx#L52-L60) | 1600 × 980 px | 80:49 landscape | 700 KB |
 | Back image in overlapping pair | [`home-vanity-detail.jpg`](public/placeholders/home-vanity-detail.jpg) | [`app/page.tsx` lines 93–99](app/page.tsx#L93-L99) | 720 × 1080 px | 2:3 portrait | 400 KB |
 | Front image in overlapping pair | [`guest-room-portrait.jpg`](public/placeholders/guest-room-portrait.jpg) | [`app/page.tsx` lines 102–108](app/page.tsx#L102-L108) | 720 × 1080 px | 2:3 portrait | 400 KB |
-| Full-width farm panorama | [`backyard-farm-panorama-natural-chickens.png`](public/placeholders/backyard-farm-panorama-natural-chickens.png) | [`app/page.tsx` lines 130–136](app/page.tsx#L130-L136) | 1600 × 760 px | 40:19 landscape | 2.6 MB |
+| Full-width farm panorama | [`backyard-farm-panorama-no-red-swing-bush.png`](public/placeholders/backyard-farm-panorama-no-red-swing-bush.png) | [`app/page.tsx` lines 130–136](app/page.tsx#L130-L136) | 1600 × 760 px | 40:19 landscape | 2.6 MB |
 | Contact-section portrait | [`contact-farm.svg`](public/placeholders/contact-farm.svg) | [`app/page.tsx` lines 170–176](app/page.tsx#L170-L176) | 720 × 960 px | 3:4 portrait | 450 KB |
 
 Recommended export settings:
@@ -116,7 +116,7 @@ Example alt text: `Caito carrying a basket of vegetables between garden rows`.
 
 ### 4. Panoramic farm image
 
-- Current file: [`public/placeholders/backyard-farm-panorama-natural-chickens.png`](public/placeholders/backyard-farm-panorama-natural-chickens.png)
+- Current file: [`public/placeholders/backyard-farm-panorama-no-red-swing-bush.png`](public/placeholders/backyard-farm-panorama-no-red-swing-bush.png)
 - Code to update: [`app/page.tsx` lines 130–136](app/page.tsx#L130-L136)
 - Required crop: **1600 × 760 px, wide landscape**
 
@@ -153,7 +153,7 @@ Example alt text: `An open wooden gate leading toward the garden and farmhouse`.
 Repeat these steps for any image you want to replace. The hero, both overlapping story frames, and panorama are finished photographs; only the contact image still uses an SVG placeholder.
 
 1. Crop the original photograph to the required aspect ratio and export it at the listed dimensions.
-2. Give it a clear matching name, such as `hero-caito-home-natural-foliage.jpg`, `home-vanity-detail.jpg`, `guest-room-portrait.jpg`, `backyard-farm-panorama-natural-chickens.png`, or `contact-farm.webp`.
+2. Give it a clear matching name, such as `hero-caito-home-natural-foliage.jpg`, `home-vanity-detail.jpg`, `guest-room-portrait.jpg`, `backyard-farm-panorama-no-red-swing-bush.png`, or `contact-farm.webp`.
 3. Add the exported file to [`public/placeholders/`](public/placeholders/).
 4. Open [`app/page.tsx`](app/page.tsx) and find the matching `<Image>` block using the links in the table above.
 5. Change only the filename and extension inside `assetPath(...)`.
