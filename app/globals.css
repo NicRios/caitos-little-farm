@@ -827,7 +827,10 @@ a:focus-visible {
   }
 
   .field-break img {
-    object-position: 23% center;
+    min-height: 31rem;
+    height: 31rem;
+    object-position: -19rem center;
+    transform: translateY(-3rem);
   }
 
   .field-caption {
