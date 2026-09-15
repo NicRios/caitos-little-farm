@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,ital,wght@6..96,0,400;6..96,0,500;6..96,1,400&family=Poiret+One&display=swap');
 
 :root {
   --paper: var(--white-soft);
@@ -13,8 +14,9 @@
   --wheat: oklch(0.78 0.105 78);
   --rule: oklch(0.74 0.029 61 / 55%);
   --white-soft: #f1eada;
-  --display: 'Iowan Old Style', 'Baskerville', 'Times New Roman', serif;
-  --hero-display: 'Bodoni 72', 'Didot', 'Bodoni MT', 'Times New Roman', serif;
+  --display: 'Bodoni Moda', 'Bodoni 72', 'Didot', 'Times New Roman', serif;
+  --hero-display: 'Bodoni Moda', 'Bodoni 72', 'Didot', 'Times New Roman', serif;
+  --accent: 'Poiret One', 'Avenir Next', 'Segoe UI', sans-serif;
   --body: 'Avenir Next', 'Segoe UI', 'Helvetica Neue', sans-serif;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -80,9 +82,10 @@ img {
 .nav-group {
   display: flex;
   gap: clamp(1rem, 2vw, 2.25rem);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.13em;
+  font-family: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
@@ -192,9 +195,10 @@ img {
 .eyebrow {
   margin: 0 0 1rem;
   color: var(--plum);
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
+  font-family: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
@@ -205,7 +209,7 @@ img {
 .hero-eyebrow {
   margin-bottom: 1.35rem;
   color: var(--white-soft);
-  font-size: clamp(0.88rem, 1.25vw, 1.05rem);
+  font-size: clamp(1rem, 1.35vw, 1.15rem);
   letter-spacing: 0.22em;
 }
 
@@ -315,9 +319,10 @@ img {
   margin-top: 1rem;
   border-bottom: 1px solid var(--plum);
   color: var(--plum);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
+  font-family: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 
@@ -365,9 +370,10 @@ img {
 }
 
 .field-caption span {
-  font-size: 0.97rem;
-  font-weight: 800;
-  letter-spacing: 0.16em;
+  font-family: var(--accent);
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.17em;
   text-transform: uppercase;
 }
 
@@ -417,9 +423,10 @@ img {
   background: var(--plum);
   border: 1px solid var(--plum);
   color: var(--white-soft);
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
+  font-family: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   transition:
     background 180ms var(--ease-out),
@@ -520,8 +527,9 @@ footer {
 
 footer p {
   margin: 0;
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
+  font-family: var(--accent);
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
   text-align: center;
   text-transform: uppercase;
 }
