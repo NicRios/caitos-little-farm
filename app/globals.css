@@ -125,7 +125,7 @@ img {
 
 .hero {
   position: relative;
-  min-height: min(64.8rem, 90svh);
+  min-height: min(57.6rem, 80svh);
   overflow: hidden;
   display: grid;
   place-items: center;
@@ -575,7 +575,7 @@ a:focus-visible {
   }
 
   .hero {
-    min-height: 90svh;
+    min-height: 80svh;
   }
 
   .hero h1 {
